@@ -1,10 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <!-- Router link prevents reload of page. -->
+      <router-link to="/">Home</router-link>|
+      <router-link to="/about">About</router-link>|
+      <router-link to="/reverse">Reverse</router-link>
     </div>
-    <router-view/>
+    <!-- Router view is showing the current view i.e. home, about, etc -->
+    <router-view />
   </div>
 </template>
 
